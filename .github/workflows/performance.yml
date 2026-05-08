@@ -14,6 +14,7 @@ on:
 jobs:
   performance:
     runs-on: ubuntu-latest
+    environment: performance
 
     steps:
       - name: Check out code
