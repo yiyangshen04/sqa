@@ -1,6 +1,7 @@
 name: performance
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "week7/performance_test.js"
