@@ -4,3 +4,7 @@ __pycache__/
 *.swp
 .playwright-cli/
 .playwright-mcp/
+.coverage
+coverage.xml
+junit.xml
+htmlcov/
