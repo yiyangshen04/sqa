@@ -24,3 +24,16 @@ jobs:
 
       - name: Test with pytest
         run: pytest week7 --junitxml=junit.xml --cov=week7 --cov-report=xml
+
+  performance:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v6
+
+      - name: Set up k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run k6 test
+        run: k6 run week7/performance_test.js
