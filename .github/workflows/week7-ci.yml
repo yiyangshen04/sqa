@@ -1,11 +1,11 @@
-name: Week 7 CI
+name: week7
 
 on:
   push:
   pull_request:
 
 jobs:
-  test:
+  week7:
     runs-on: ubuntu-latest
 
     steps:
